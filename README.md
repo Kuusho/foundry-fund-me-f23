@@ -1,66 +1,23 @@
-## Foundry
+## FUND ME 
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+### WHAT SHOULD THIS CODE DO?
 
-Foundry consists of:
+This is a simple Fundraiser Contract.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+The fact that this Aboutme is changed from the default means it is now a playground for learning and playing with this code.
 
-## Documentation
+Here's what it SHOULD do:
 
-https://book.getfoundry.sh/
+1. Allow anyone fund it with a minimum of $5.
+2. Allow funds be withdrawn only by the contract owner.
 
-## Usage
+That's all.
 
-### Build
 
-```shell
-$ forge build
-```
+## WHAT CAN CHANGE?
 
-### Test
+This is a rather simple contract that can be played with in a variety of ways:
 
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+1. let only certain people fund it.
+2. randomly change the owner to one of the funders address.
+3. stop receiving funds after reaching a certain limit.
